@@ -1,0 +1,261 @@
+/* Template Name:
+  Author: 
+  Version: 1.0.0
+  File Description: Main Css file of the template
+*/
+/* 01. Template Font */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+/* 02. Header css */
+body {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  color: #656565;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis", Sans-serif;
+}
+
+.header-top {
+  padding: 10px 0;
+  background-color: #172d83;
+}
+
+.header-top-left a {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.header-top-left a:after {
+  position: absolute;
+  content: "";
+  right: -1px;
+  top: 0;
+  height: 100%;
+  background: #fff;
+  width: 1px;
+}
+.header-top-left a:last-child {
+  padding: 0;
+  margin: 0;
+}
+.header-top-left a:last-child:after {
+  content: none;
+}
+
+.header-top-right {
+  text-align: right;
+}
+.header-top-right a {
+  color: #Fff;
+  margin-left: 10px;
+}
+.header-top-right a:hover {
+  color: #06A3FB;
+}
+.header-top-right a i {
+  margin-right: 5px;
+}
+
+.main-menu {
+  display: inline-block;
+}
+.main-menu ul {
+  margin: 0;
+}
+.main-menu ul ul {
+  text-align: left;
+}
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+  padding: 35px 20px;
+}
+.main-menu ul li a {
+  color: #656565;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  display: inline-block;
+}
+.main-menu ul li:hover > a {
+  color: #172d83;
+}
+.main-menu ul li:hover > a:after {
+  color: #172d83;
+}
+.main-menu ul > li.submenu > ul {
+  position: absolute;
+  width: 240px;
+  background: #fff;
+  padding: 10px 0;
+  top: 120%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 11;
+  border-top: 4px solid #172d83;
+}
+.main-menu ul > li.submenu > ul li {
+  display: block;
+  padding: 5px 20px;
+}
+.main-menu ul > li.submenu:hover > ul {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* */
+.main-menu ul li.submenu > ul li {
+  display: block;
+  padding: 5px 20px;
+}
+
+.main-menu ul li.submenu > ul li a {
+  color: #223645;
+  font-weight: normal;
+  display: block;
+  font-size: 18px;
+}
+
+.main-menu ul li.submenu > ul li a::after {
+  content: "";
+}
+
+.main-menu ul li.submenu > ul li:hover > a {
+  color: #172d83;
+}
+
+.main-menu ul > li.submenu > ul li.submenu > ul {
+  top: 0;
+  left: 100%;
+}
+
+.cart-link {
+  font-size: 18px;
+}
+
+.cart-link span {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #172d83;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-contact img {
+  margin-right: 15px;
+}
+
+.header-contact a {
+  color: #223645;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-contact a span {
+  color: #7a8a9e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 115px;
+}
+
+/* Theme Button */
+.theme-btn {
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #172d83;
+  padding: 15px 25px;
+}
+
+.theme-btn:hover {
+  background-color: #06A3FB;
+  color: #fff;
+}
+
+.theme-btn.medium {
+  padding: 12px 25px;
+}
+
+.theme-btn i {
+  margin-left: 8px;
+}
+
+.theme-btn.secondary-color {
+  background-color: #06A3FB;
+}
+
+.theme-btn.secondary-color:hover {
+  background-color: #172d83;
+}
+
+/* Theme Title */
+.theme-title h2, .theme-title h3 {
+  margin: 0 0 5px;
+}
+
+.theme-title h3 {
+  color: #142752;
+  font-family: "Arimo", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.theme-title h2 {
+  color: #142752;
+  font-family: "Dosis", Sans-serif;
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+/* Image Caption */
+.dt-sc-image-caption {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 0 0 40px;
+  padding: 0px;
+}
+
+.dt-sc-image-caption .dt-sc-image-wrapper {
+  position: relative;
+}
+
+.dt-sc-image-caption .dt-sc-image-content {
+  display: inline-block;
+  clear: both;
+  margin: 20px 0 0;
+}
+
+.dt-sc-image-caption .dt-sc-image-title h3, .dt-sc-image-caption .dt-sc-image-title h5 {
+  margin: 0 0 10px;
+}
+
+.dt-sc-image-caption .dt-sc-image-content p {
+  margin-bottom: 25px;
+}
